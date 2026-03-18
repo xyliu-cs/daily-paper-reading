@@ -159,6 +159,9 @@ html, body {
   .toc-float { display: block; }
 }
 
+/* Ensure hidden attribute always takes effect even when media query overrides display */
+.toc-float[hidden] { display: none !important; }
+
 .toc-float-title {
   padding: 4px 12px 8px;
   font-size: 10px;

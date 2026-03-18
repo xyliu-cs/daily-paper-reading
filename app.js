@@ -90,7 +90,7 @@
       '<div class="toc-float-title">Contents</div>' +
       sections.map((el, i) => {
         const indent = (parseInt(el.tagName[1]) - 2) * 10; // h2→0, h3→10, h4→20
-        return `<a class="toc-item" href="#toc-${i}" style="padding-left:${12 + indent}px">${escHtml(el.textContent)}</a>`;
+        return `<a class="toc-item" href="#toc-${i}" style="padding-left:${12 + indent}px" title="${escHtml(el.textContent)}">${escHtml(el.textContent)}</a>`;
       }).join('');
 
     // Click: scroll without triggering a hash-change navigation
