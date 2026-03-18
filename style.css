@@ -26,10 +26,7 @@ html, body {
 }
 
 /* ── Layout ── */
-.layout {
-  display: flex;
-  height: 100vh;
-}
+.layout { display: flex; height: 100vh; }
 
 /* ── Sidebar ── */
 .sidebar {
@@ -72,10 +69,7 @@ html, body {
   line-height: 1;
 }
 
-.nav {
-  padding: 10px 0;
-  flex: 1;
-}
+.nav { padding: 10px 0; flex: 1; }
 
 .nav-item {
   display: block;
@@ -85,29 +79,15 @@ html, body {
   border-left: 3px solid transparent;
   transition: background 0.1s, color 0.1s;
 }
-
-.nav-item:hover {
-  background: var(--sidebar-hover);
-  color: #e2e8f0;
-}
-
+.nav-item:hover { background: var(--sidebar-hover); color: #e2e8f0; }
 .nav-item.active {
   background: var(--sidebar-active-bg);
   border-left-color: var(--sidebar-active-bar);
   color: #f1f5f9;
 }
 
-.nav-item-title {
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 1.4;
-  margin-bottom: 2px;
-}
-
-.nav-item-meta {
-  font-size: 11px;
-  color: #475569;
-}
+.nav-item-title { font-size: 13px; font-weight: 500; line-height: 1.4; margin-bottom: 2px; }
+.nav-item-meta  { font-size: 11px; color: #475569; }
 
 .nav-section {
   padding: 14px 16px 4px;
@@ -132,78 +112,14 @@ html, body {
   padding: 52px 40px;
 }
 
-/* ── Home page ── */
-.home-title {
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 6px;
-}
-
-.home-subtitle {
-  color: var(--text-muted);
-  margin-bottom: 36px;
-  font-size: 14px;
-}
-
-.papers-list {
+/* ── Paper page layout (text + sticky TOC side by side) ── */
+.paper-topbar {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
 }
 
-.paper-card {
-  display: block;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 18px 22px;
-  text-decoration: none;
-  color: inherit;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.paper-card:hover {
-  border-color: #93c5fd;
-  box-shadow: 0 2px 10px rgba(37,99,235,0.08);
-}
-
-.paper-card-title {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 4px;
-  line-height: 1.4;
-}
-
-.paper-card-meta {
-  font-size: 12px;
-  color: var(--text-muted);
-  margin-bottom: 6px;
-}
-
-.paper-card-summary {
-  font-size: 13px;
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 8px;
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.tag {
-  background: var(--tag-bg);
-  color: var(--tag-text);
-  font-size: 11px;
-  font-weight: 500;
-  padding: 2px 8px;
-  border-radius: 4px;
-}
-
-/* ── Paper page ── */
 .back-btn {
   display: inline-flex;
   align-items: center;
@@ -213,31 +129,181 @@ html, body {
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 5px;
-  margin-bottom: 36px;
   transition: background 0.1s, color 0.1s;
 }
+.back-btn:hover { background: var(--code-bg); color: var(--text); }
 
-.back-btn:hover {
-  background: var(--code-bg);
-  color: var(--text);
+.paper-body {
+  min-width: 0;
 }
+
+/* ── Floating TOC (fixed left, vertically centered) ── */
+.toc-float {
+  display: none;
+  position: fixed;
+  left: calc(50vw - 430px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 160px;
+  max-height: 70vh;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--code-bg);
+  padding: 10px 0;
+  z-index: 50;
+}
+
+/* Show TOC when there's room left of the content: sidebar(260) + content(780) + margins + TOC(160) ≈ 1420px */
+@media (min-width: 1420px) {
+  .toc-float { display: block; }
+}
+
+.toc-float-title {
+  padding: 4px 12px 8px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4px;
+}
+
+.toc-item {
+  display: block;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-decoration: none;
+  line-height: 1.5;
+  border-left: 2px solid transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.1s, border-color 0.1s;
+}
+.toc-item:hover { color: var(--text); }
+.toc-item.active { color: var(--link); border-left-color: var(--link); }
+
+/* ── Language switcher (top-right) ── */
+.lang-switcher { display: flex; gap: 4px; }
+
+.lang-btn {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: background 0.1s, color 0.1s, border-color 0.1s;
+}
+.lang-btn:hover { border-color: var(--link); color: var(--link); }
+.lang-btn.active { background: var(--link); border-color: var(--link); color: #fff; }
+
+/* ── Like button (bottom of report) ── */
+.paper-footer {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+}
+
+.like-btn-paper {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.like-btn-paper:hover { border-color: #f87171; color: #ef4444; background: #fff5f5; }
+.like-btn-paper.liked { border-color: #ef4444; color: #ef4444; background: #fff5f5; }
+
+/* ── Home page ── */
+.home-title  { font-size: 26px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+.home-subtitle { color: var(--text-muted); margin-bottom: 36px; font-size: 14px; }
+.papers-list { display: flex; flex-direction: column; gap: 12px; }
+
+/* Paper card */
+.paper-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.paper-card:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 2px 10px rgba(37,99,235,0.08);
+}
+
+.paper-card-date {
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  min-width: 72px;
+  padding-top: 3px;
+  font-variant-numeric: tabular-nums;
+}
+
+.paper-card-body { flex: 1; min-width: 0; }
+
+.paper-card-title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.paper-card-title { flex: 1; font-size: 15px; font-weight: 600; color: var(--text); line-height: 1.4; }
+.paper-card-meta  { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
+.paper-card-summary { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 8px; }
+
+.tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.tag  { background: var(--tag-bg); color: var(--tag-text); font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 4px; }
+
+/* Like button on cards */
+.like-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 2px;
+  line-height: 1;
+  color: #cbd5e1;
+  flex-shrink: 0;
+  transition: color 0.15s, transform 0.1s;
+}
+.like-btn:hover { color: #f87171; transform: scale(1.2); }
+.like-btn.liked { color: #ef4444; }
 
 /* ── Markdown rendering ── */
 .paper-body h1 { font-size: 24px; font-weight: 700; margin: 0 0 28px; line-height: 1.3; }
-.paper-body h2 { font-size: 18px; font-weight: 600; margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.paper-body h2 { font-size: 18px; font-weight: 600; margin: 40px 0 14px; }
 .paper-body h3 { font-size: 15px; font-weight: 600; margin: 28px 0 10px; }
 .paper-body h4 { font-size: 14px; font-weight: 600; margin: 20px 0 8px; }
+.paper-body p  { margin: 0 0 16px; line-height: 1.8; }
 
-.paper-body p { margin: 0 0 16px; line-height: 1.8; }
-
-.paper-body a { color: var(--link); text-decoration: none; }
+.paper-body a       { color: var(--link); text-decoration: none; }
 .paper-body a:hover { text-decoration: underline; }
 
-.paper-body ul,
-.paper-body ol { margin: 0 0 16px 22px; }
-.paper-body li { margin-bottom: 6px; line-height: 1.75; }
+.paper-body ul, .paper-body ol { margin: 0 0 16px 22px; }
+.paper-body li             { margin-bottom: 6px; line-height: 1.75; }
 .paper-body li > ul,
-.paper-body li > ol { margin-top: 6px; margin-bottom: 0; }
+.paper-body li > ol        { margin-top: 6px; margin-bottom: 0; }
 
 .paper-body code {
   background: var(--code-bg);
@@ -255,14 +321,7 @@ html, body {
   margin: 0 0 18px;
   overflow-x: auto;
 }
-
-.paper-body pre code {
-  background: none;
-  border: none;
-  padding: 0;
-  font-size: 13px;
-  color: #e2e8f0;
-}
+.paper-body pre code { background: none; border: none; padding: 0; font-size: 13px; color: #e2e8f0; }
 
 .paper-body blockquote {
   border-left: 3px solid var(--border);
@@ -271,74 +330,29 @@ html, body {
   color: var(--text-muted);
 }
 
-.paper-body img {
-  max-width: 100%;
-  border-radius: 6px;
-  display: block;
-  margin: 12px auto;
-}
+.paper-body img { max-width: 100%; border-radius: 6px; display: block; margin: 12px auto; }
 
-.paper-body table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 0 0 18px;
-  font-size: 14px;
-}
-
-.paper-body th {
-  background: var(--code-bg);
-  font-weight: 600;
-  padding: 9px 12px;
-  text-align: left;
-  border: 1px solid var(--border);
-}
-
-.paper-body td {
-  padding: 8px 12px;
-  border: 1px solid var(--border);
-  line-height: 1.6;
-}
-
+.paper-body table { width: 100%; border-collapse: collapse; margin: 0 0 18px; font-size: 14px; }
+.paper-body th    { background: var(--code-bg); font-weight: 600; padding: 9px 12px; text-align: left; border: 1px solid var(--border); white-space: nowrap; }
+.paper-body td    { padding: 8px 12px; border: 1px solid var(--border); line-height: 1.6; }
+.paper-body td:first-child       { white-space: nowrap; }
 .paper-body tr:nth-child(even) td { background: #f8fafc; }
 
-.paper-body hr {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 36px 0;
-}
-
-/* KaTeX display math */
-.paper-body .katex-display {
-  overflow-x: auto;
-  padding: 4px 0;
-}
+.paper-body hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
+.paper-body .katex-display { overflow-x: auto; padding: 4px 0; }
 
 /* ── Empty state ── */
-.empty-state {
-  text-align: center;
-  padding: 80px 0;
-  color: var(--text-muted);
-}
-
+.empty-state { text-align: center; padding: 80px 0; color: var(--text-muted); }
 .empty-state p { margin-top: 8px; font-size: 14px; }
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .menu-toggle { display: block; }
-
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: static;
-    min-width: unset;
-  }
-
+  .sidebar { width: 100%; height: auto; position: static; min-width: unset; }
   .nav { display: none; }
   .nav.open { display: block; }
-
   .layout { flex-direction: column; height: auto; }
-
   .main { margin-left: 0; }
-
   .content { padding: 28px 20px; }
+  .paper-card-date { min-width: 56px; }
 }

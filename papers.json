@@ -1,1 +1,22 @@
-[]
+[
+    {                                                                                                                    
+        "id":      "Attention_Residuals_report",                                                                                      
+        "title":   "Attention Residuals: A Simple but Effective Modality Fusion Technique for Multi-Modal LLMs",                                                                                          
+        "date":    "2025-06-01",                                                                                           
+        "venue":   "ICLR 2026",                                                                                       
+        "tags":    ["LLM", "Efficiency"], 
+        "langs": ["zh", "en"],                                                                                 
+        "summary": "We propose a simple but effective modality fusion technique for multi-modal LLMs. We show that adding attention residuals to the input embeddings of the language model can improve the performance of the model.",
+        "report_date": "2026-03-19"                                                                                 
+      },
+    {
+        "id":      "OPCD_report",
+        "title":   "On-Policy Context Distillation for Language Models",
+        "date":    "2026-02-12",
+        "venue":   "Microsoft Research · arXiv:2602.12275",
+        "tags":    ["LLM", "Distillation", "In-Context Learning"],
+        "langs": ["zh", "en"],
+        "summary": "On-policy sampling with reverse KL divergence to internalize context knowledge into model parameters, outperforming off-policy baselines on reasoning and domain tasks.",
+        "report_date": "2026-03-19"
+    }
+]
