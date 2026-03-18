@@ -2,14 +2,14 @@
 //
 // papers.json schema:
 // {
-//   "id":          "my_paper",          // file = {id}.md  (or {id}_{lang}.md when langs is set)
+//   "id":          "my_paper",          // file = {id}_report.md  (or {id}_{lang}_report.md when langs is set)
 //   "title":       "Paper Title",
 //   "report_date": "2026-03-15",        // date we published this note  ← shown in main list
 //   "date":        "2025-01",           // original paper date           ← shown as secondary info
 //   "venue":       "NeurIPS 2025",      // optional
 //   "tags":        ["LLM"],             // optional
 //   "summary":     "One-line summary.", // optional
-//   "langs":       ["zh", "en"]        // optional: enables lang switcher; files = {id}_zh.md etc.
+//   "langs":       ["zh", "en"]        // optional: enables lang switcher; files = {id}_zh_report.md etc.
 // }
 //
 // Likes and language preferences are stored in localStorage (browser-local only).
@@ -190,7 +190,7 @@
       lang = null;
     }
 
-    const filename = hasLangs ? `src/${paperId}_${lang}.md` : `src/${paperId}.md`;
+    const filename = hasLangs ? `src/${paperId}_${lang}_report.md` : `src/${paperId}_report.md`;
     content.innerHTML = '<p style="color:var(--text-muted);padding:40px 0">Loading…</p>';
 
     try {
