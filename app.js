@@ -196,7 +196,12 @@
     try {
       const res = await fetch(filename);
       if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
-      const html = marked.parse(await res.text());
+      let mdText = await res.text();
+      mdText = mdText.replace(
+        /!\[([^\]]*)\]\((?!https?:\/\/|\/|data:)([^)]+)\)/g,
+        (_, alt, path) => `![${alt}](src/${path})`
+      );
+      const html = marked.parse(mdText);
 
       // Language switcher (top-right, only when multiple langs available)
       const langSwitcher = multiLang
