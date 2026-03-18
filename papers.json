@@ -8,5 +8,15 @@
         "langs": ["zh", "en"],                                                                                          
         "summary": "OpenClaw-RL recovers evaluative and directive signals from live next-state interactions to train any agent continuously via Binary RL and Hindsight-Guided On-Policy Distillation, achieving a 4.8x gain on personal agent personalization and consistent improvements across terminal, GUI, SWE, and tool-call settings.",              
         "report_date": "2026-03-19"                                                                                     
+    },
+    {                                                                                                                   
+        "id": "SkillRL",                                                                                            
+        "title": "SKILLRL: Evolving Agents via Recursive Skill-Augmented Reinforcement Learning",                                                      
+        "date": "2026-02-10",                                                                                           
+        "venue": "Arxiv",                                                                                               
+        "tags": ["Agentic RL", "Skill"],                                       
+        "langs": ["zh", "en"],                                                                                          
+        "summary": "SKILLRL distills raw trajectories into a hierarchical skill library (SKILLBANK) and co-evolves that library with the agent's RL policy through recursive failure analysis.",              
+        "report_date": "2026-03-19"                                                                                     
     } 
 ]
