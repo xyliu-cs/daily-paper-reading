@@ -232,8 +232,34 @@ html, body {
 .like-btn-paper.liked { border-color: #ef4444; color: #ef4444; background: #fff5f5; }
 
 /* ── Home page ── */
+.home-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
 .home-title  { font-size: 26px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
-.home-subtitle { color: var(--text-muted); margin-bottom: 36px; font-size: 14px; }
+.home-subtitle { color: var(--text-muted); font-size: 14px; }
+
+.personal-site-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.personal-site-btn:hover {
+  border-color: var(--link);
+  color: var(--link);
+  background: #eff6ff;
+}
 .papers-list { display: flex; flex-direction: column; gap: 12px; }
 
 /* Paper card */

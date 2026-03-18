@@ -144,8 +144,16 @@
       return;
     }
     content.innerHTML = `
-      <h1 class="home-title">Daily Paper Reading</h1>
-      <p class="home-subtitle">${papers.length} note${papers.length !== 1 ? 's' : ''}</p>
+      <div class="home-header">
+        <div>
+          <h1 class="home-title">Daily Paper Reading</h1>
+          <p class="home-subtitle">${papers.length} note${papers.length !== 1 ? 's' : ''}</p>
+        </div>
+        <a href="https://xyliu-cs.github.io" target="_blank" rel="noopener noreferrer" class="personal-site-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          My Website
+        </a>
+      </div>
       <div class="papers-list">
         ${papers.map(p => {
           const reportDate = p.report_date || '';
