@@ -190,7 +190,7 @@
       lang = null;
     }
 
-    const filename = hasLangs ? `${paperId}_${lang}.md` : `${paperId}.md`;
+    const filename = hasLangs ? `src/${paperId}_${lang}.md` : `src/${paperId}.md`;
     content.innerHTML = '<p style="color:var(--text-muted);padding:40px 0">Loading…</p>';
 
     try {
