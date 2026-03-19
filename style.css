@@ -19,6 +19,7 @@
 
 html, body {
   height: 100%;
+  overflow: hidden;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -393,7 +394,8 @@ html, body {
   .nav { display: none; }
   .nav.open { display: block; }
   .layout { flex-direction: column; height: auto; }
-  .main { margin-left: 0; }
+  .main { margin-left: 0; overflow-y: visible; }
   .content { padding: 28px 20px; }
   .paper-card-date { min-width: 56px; }
+  html, body { overflow: auto; }
 }
