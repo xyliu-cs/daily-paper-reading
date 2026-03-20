@@ -1,4 +1,14 @@
 [
+    {
+        "id": "RLCER",
+        "title": "Reinforcing Chain-of-Thought Reasoning with Self-Evolving Rubrics",
+        "date": "2026-02-12",
+        "venue": "Arxiv",
+        "tags": ["Chain-of-Thought", "Reinforcement Learning", "Self-Evolving"],
+        "langs": ["zh", "en"],
+        "summary": "RLCER enables a single LLM to self-propose and self-evolve rubrics for direct CoT supervision during RLVR training, outperforming outcome-centric RLVR without any human annotation.",
+        "report_date": "2026-03-20"
+    },
     {                                                                                                                   
         "id": "OpenClaw-RL",                                                                                            
         "title": "OpenClaw-RL: Train Any Agent Simply by Talking",                                                      
