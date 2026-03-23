@@ -1,9 +1,19 @@
 [
+    {
+        "id": "MetaClaw",
+        "title": "MetaClaw: Just Talk - An Agent That Meta-Learns and Evolves in the Wild",
+        "date": "2026-03",
+        "venue": "Arxiv",
+        "tags": ["LLM Agents", "Continual Meta-Learning", "Reinforcement Learning"],
+        "langs": ["zh", "en"],
+        "summary": "A continual meta-learning framework that enables deployed LLM agents to evolve through dual-timescale adaptation: gradient-free skill injection from failures and opportunistic RL-based policy optimization during idle windows.",
+        "report_date": "2026-03-24"
+    },
     {                                                                             
         "id": "on_policy_context_distillation",
         "title": "On-Policy Context Distillation for Language Models",            
         "date": "2026-02-12",                                                   
-        "venue": "arXiv",                                                         
+        "venue": "Arxiv",                                                         
         "tags": ["Context Distillation", "On-Policy Learning", "Knowledge Internalization"],                                                            
         "langs": ["zh", "en"],                                                  
         "summary": "OPCD trains a student model on its own generated trajectories while minimizing reverse KL divergence against a context-conditioned teacher, enabling robust internalization of transient in-context knowledge (experiential knowledge and system prompts) into model parameters.",          
