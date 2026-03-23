@@ -1,4 +1,24 @@
 [
+    {                                                                             
+        "id": "on_policy_context_distillation",
+        "title": "On-Policy Context Distillation for Language Models",            
+        "date": "2026-02-12",                                                   
+        "venue": "arXiv",                                                         
+        "tags": ["Context Distillation", "On-Policy Learning", "Knowledge Internalization"],                                                            
+        "langs": ["zh", "en"],                                                  
+        "summary": "OPCD trains a student model on its own generated trajectories while minimizing reverse KL divergence against a context-conditioned teacher, enabling robust internalization of transient in-context knowledge (experiential knowledge and system prompts) into model parameters.",          
+        "report_date": "2026-03-23"                                             
+    },
+    {                                                                             
+        "id": "align_llms_from_user_interact",                                    
+        "title": "Aligning Language Models from User Interactions",               
+        "date": "2026-02-18",                                                     
+        "venue": "Arxiv",                                                         
+        "tags": ["RLHF", "Self-Distillation", "Personalization"],                 
+        "langs": ["zh", "en"],                                                    
+        "summary": "SDPO learns directly from multi-turn user interactions via self-distillation — using the user's follow-up message as hindsight context to derive token-level advantages — improving alignment benchmarks on Qwen3/Olmo3 without explicit rewards or preference labels.",                             
+        "report_date": "2026-03-23"                           
+    },
     {
         "id": "RLCER",
         "title": "Reinforcing Chain-of-Thought Reasoning with Self-Evolving Rubrics",
