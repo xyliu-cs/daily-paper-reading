@@ -1,0 +1,261 @@
+[{
+  "caption": "Table 9. We fix these hyperparameters across all applications.",
+  "captionBoundary": {
+    "x1": 183.9720001220703,
+    "x2": 427.7416076660156,
+    "y1": 363.7848815917969,
+    "y2": 369.0840148925781
+  },
+  "figType": "Table",
+  "imageText": ["Further", "details", "Appendix", "A"],
+  "name": "9",
+  "page": 24,
+  "regionBoundary": {
+    "x1": 90.0,
+    "x2": 522.0,
+    "y1": 333.71999999999997,
+    "y2": 352.08
+  },
+  "renderDpi": 200,
+  "renderURL": "2601.16175v2_fig/2601.16175v2-Table9-1.png"
+}, {
+  "caption": "Table 7. Denoising task for single cell data analysis. We report the score (mean of normalized MSE and Poisson scores), MSE, and Poisson metrics for each dataset. Our state-of-the-art algorithm is released and can be validated in our codebase. MAGIC (A, R) = MAGIC [75] approximate with reversed normalization; MAGIC (R) = MAGIC with reversed normalization; ALRA [40] (S, R) = ALRA sqrt norm with reversed normalization; MAGIC (A) = MAGIC approximate.",
+  "captionBoundary": {
+    "x1": 89.69499969482422,
+    "x2": 522.6964111328125,
+    "y1": 616.1548461914062,
+    "y2": 665.2890014648438
+  },
+  "figType": "Table",
+  "imageText": ["TTT-Discover", "gpt-oss-120b", "0.71", "0.15", "0.05", "0.73", "0.14", "0.03", "Method", "Model", "Score", "(↑)", "MSE", "(↓)", "Poisson", "(↓)", "Score", "(↑)", "MSE", "(↓)", "Poisson", "(↓)", "MAGIC", "(A,", "R)", "–", "0.64", "0.19", "0.05", "0.64", "0.18", "0.03", "MAGIC", "(R)", "–", "0.64", "0.19", "0.05", "0.64", "0.18", "0.03", "ALRA", "(S,", "RN)", "–", "0.50", "0.26", "0.05", "0.47", "0.27", "0.03", "MAGIC", "(A)", "–", "0.42", "0.19", "0.16", "0.40", "0.18", "0.12", "MAGIC", "–", "0.42", "0.19", "0.16", "0.40", "0.18", "0.12", "OpenEvolve", "gpt-oss-120b", "0.70", "0.16", "0.05", "0.71", "0.15", "0.03", "Best-of-25600", "gpt-oss-120b", "0.62", "0.20", "0.05", "0.65", "0.18", "0.03", "PBMC", "Tabula"],
+  "name": "7",
+  "page": 14,
+  "regionBoundary": {
+    "x1": 91.8,
+    "x2": 520.1999999999999,
+    "y1": 482.03999999999996,
+    "y2": 602.64
+  },
+  "renderDpi": 200,
+  "renderURL": "2601.16175v2_fig/2601.16175v2-Table7-1.png"
+}, {
+  "caption": "Table 10. Results of TTT MLA-Decode kernels filtered with Triton kernels.",
+  "captionBoundary": {
+    "x1": 158.20700073242188,
+    "x2": 453.5063781738281,
+    "y1": 506.3798522949219,
+    "y2": 511.6789855957031
+  },
+  "figType": "Table",
+  "imageText": ["TTT-Discover", "gpt-oss-120b", "1740.6", "[1697.9,", "1783.2]", "1754.4", "[1736.7,", "1772.2]", "1707.1", "[1664.5,", "1749.8]", "Best-of-25600", "gpt-oss-120b", "2286.0", "[2264.2,", "2307.8]", "2324.1", "[2306.0,", "2342.1]", "2275.2", "[2267.3,", "2283.1]", "5th", "human", "–", "2038.6", "[2017.8,", "2059.3]", "2037.3", "[2021.0,", "2053.6]", "2041.9", "[1989.0,", "2094.8]", "4th", "human", "–", "1768.7", "[1750.3,", "1787.2]", "1769.9", "[1755.2,", "1784.6]", "1767.0", "[1736.2,", "1797.8]", "3rd", "human", "–", "1723.0", "[1711.5,", "1734.5]", "1765.8", "[1758.1,", "1773.5]", "1718.0", "[1698.3,", "1737.7]", "2nd", "human", "–", "1662.8", "[1648.8,", "1676.8]", "1688.6", "[1677.6,", "1699.5]", "1679.7", "[1653.4,", "1705.9]", "1st", "human", "–", "1653.8", "[1637.3,", "1670.3]", "1688.6", "[1672.8,", "1704.3]", "1668.7", "[1637.0,", "1700.3]", "Instance", "1", "Instance", "2", "Instance", "3", "Method", "Model", "AMD", "MI300X", "-", "MLA", "Decode", "(↓,µs)", "[95%", "CI]"],
+  "name": "10",
+  "page": 38,
+  "regionBoundary": {
+    "x1": 95.75999999999999,
+    "x2": 516.24,
+    "y1": 360.0,
+    "y2": 494.28
+  },
+  "renderDpi": 200,
+  "renderURL": "2601.16175v2_fig/2601.16175v2-Table10-1.png"
+}, {
+  "caption": "Table 3. Results for circle packing. ShinkaEvolve uses an ensemble of Claude Sonnet-4, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, o4-mini.",
+  "captionBoundary": {
+    "x1": 89.71299743652344,
+    "x2": 523.162353515625,
+    "y1": 436.5938720703125,
+    "y2": 452.85101318359375
+  },
+  "figType": "Table",
+  "imageText": ["TTT-Discover", "Qwen3-8B", "2.635983", "2.939572", "Method", "Model", "n", "=", "26", "(↑)", "n", "=", "32", "(↑)", "AlphaEvolve", "[50]", "Gemini-2.0", "Pro", "+", "Flash", "2.635862", "2.937944", "AlphaEvolve", "V2", "[14]", "Gemini-2.0", "Pro", "+", "Flash", "2.635983", "2.939572", "ShinkaEvolve", "[37]", "Ensemble", "(see", "caption)", "2.635982", "n/a", "ThetaEvolve", "[78]", "R1-Qwen3-8B", "2.635983", "n/a"],
+  "name": "3",
+  "page": 9,
+  "regionBoundary": {
+    "x1": 141.84,
+    "x2": 470.15999999999997,
+    "y1": 344.52,
+    "y2": 422.28
+  },
+  "renderDpi": 200,
+  "renderURL": "2601.16175v2_fig/2601.16175v2-Table3-1.png"
+}, {
+  "caption": "Figure 3. We show the prior and new state-of-the-art, with the (normalized) step functions and their autoconvolutions. Both AlphaEvolve and TTT-Discover starts the discovery process from scratch, while ThetaEvolve initializes from the AlphaEvolve construction, and thus is very similar to the AlphaEvolve construction. TTT-Discover found a 30,000-piece step function that certifies that the upper bound C1 ≤ 1.50286, while AlphaEvolve and ThetaEvolve constructions are 1319-piece. We overlay the step functions and their autoconvolution visually for qualitative comparison.",
+  "captionBoundary": {
+    "x1": 89.66799926757812,
+    "x2": 523.6357421875,
+    "y1": 268.60589599609375,
+    "y2": 328.70001220703125
+  },
+  "figType": "Figure",
+  "imageText": ["Autoconvolutions", "TTT-Discover", "(new", "state-of-the-art)", "(30000-piece):", "C1", "1.50286", "ThetaEvolve", "(1319-piece):", "C1", "1.50313", "AlphaEvolve", "(1319-piece):", "C1", "1.50316", "State-of-the-art", "for", "the", "First", "Autocorrelation", "Inequality"],
+  "name": "3",
+  "page": 9,
+  "regionBoundary": {
+    "x1": 91.8,
+    "x2": 520.1999999999999,
+    "y1": 91.08,
+    "y2": 255.23999999999998
+  },
+  "renderDpi": 200,
+  "renderURL": "2601.16175v2_fig/2601.16175v2-Figure3-1.png"
+}, {
+  "caption": "Table 6. Results in two AtCoder Heuristic Competitions. We train our models with local public tests, and submit the best program we get during training to the official submission platform. Our algorithms are released and can be validated in our codebase. Our solutions in the official AtCoder submission platform are publicly available for ahc039 and ahc058. ALE-Agent uses Gemini-2.5 Pro for ahc039, and Gemini-3 Pro Preview high and gpt-5.2-high for ahc058. ShinkaEvolve uses an ensemble of gpt-5, gpt-5-mini, Gemini-2.5 Pro and Flash, Claude Sonnet 4, o4-mini.",
+  "captionBoundary": {
+    "x1": 89.71299743652344,
+    "x2": 523.1700439453125,
+    "y1": 484.55987548828125,
+    "y2": 544.6530151367188
+  },
+  "figType": "Table",
+  "imageText": ["TTT-Discover", "gpt-oss-120b", "567,062", "848,414,228", "ALE-Agent", "[27]", "Ensemble", "(see", "caption)", "550,647", "848,373,282", "ShinkaEvolve", "[37]", "Ensemble", "(see", "caption)", "558,026", "n/a", "Best-of-25600", "gpt-oss-120b", "554,171", "772,429,752", "1st", "human", "–", "566,997", "847,674,723", "2nd", "human", "–", "557,212", "846,938,871", "3rd", "human", "–", "554,334", "846,350,877", "4th", "human", "–", "552,933", "845,489,747", "5th", "human", "–", "549,746", "845,324,831", "Method", "Model", "Geometry", "(ahc039)", "Scheduling", "(ahc058)"],
+  "name": "6",
+  "page": 13,
+  "regionBoundary": {
+    "x1": 99.72,
+    "x2": 512.28,
+    "y1": 339.47999999999996,
+    "y2": 471.24
+  },
+  "renderDpi": 200,
+  "renderURL": "2601.16175v2_fig/2601.16175v2-Table6-1.png"
+}, {
+  "caption": "Table 1. Overview of the science and engineering problems in our paper, and the environments they induce (§2.1). Note that the reward is 0 if s fails validity checks.",
+  "captionBoundary": {
+    "x1": 89.69499969482422,
+    "x2": 522.00341796875,
+    "y1": 195.1448211669922,
+    "y2": 211.40301513671875
+  },
+  "figType": "Table",
+  "imageText": ["Single", "Cell", "Analysis", "Analysis", "code", "1/MSE", "1/Runtime", "Algorithm", "Competition", "Algorithm", "code", "Test", "score", "and", "code", "s′", "=", "Parse(a)", "Kernel", "Engineering", "Kernel", "code", "Thinking", "tokens", "and", "code", "s′", "=", "Python(Parse(a))", "1/Upper", "bound", "Autocorr.", "Inequality", "(1st)", "1/Upper", "bound", "Autocorr.", "Inequality", "(2nd)", "Lower", "bound", "Thinking", "tokens", "certificate", "Erdős", "Minimum", "Overlap", "Step", "function", "Problem", "State", "s", "Action", "a", "Transition", "Reward", "R(s)"],
+  "name": "1",
+  "page": 2,
+  "regionBoundary": {
+    "x1": 96.84,
+    "x2": 515.16,
+    "y1": 90.0,
+    "y2": 183.23999999999998
+  },
+  "renderDpi": 200,
+  "renderURL": "2601.16175v2_fig/2601.16175v2-Table1-1.png"
+}, {
+  "caption": "Table 2. Results in mathematics problems. In the Erdős’ Minimum Overlap Problem and First Autocorrelation Inequality (AC1), TTT-Discover sets the new state-of-the-art. We also report TTT-Discover with Qwen3-8B, for a better comparison to ThetaEvolve. Notable, TTT-Discover with Qwen3-8B outperforms not only ThetaEvolve, baselines including AlphaEvolve which uses Gemini-2.0 family models for the autocorrelation inequalities. Our state-of-the-art constructions are released and can be validated in our codebase.",
+  "captionBoundary": {
+    "x1": 89.71299743652344,
+    "x2": 523.6355590820312,
+    "y1": 235.4718475341797,
+    "y2": 284.60699462890625
+  },
+  "figType": "Table",
+  "imageText": ["TTT-Discover", "Qwen3-8B", "0.380932", "1.50525", "0.9472", "TTT-Discover", "gpt-oss-120b", "0.380876", "1.50287", "0.9591", "AlphaEvolve", "[50]", "Gemini-2.0", "Pro", "+", "Flash", "0.380924", "1.50530", "0.8962", "AlphaEvolve", "V2", "[14]", "Gemini-2.0", "Pro", "+", "Flash", "0.380924", "1.50317", "0.9610", "ThetaEvolve", "[78]", "R1-Qwen3-8B", "n/a", "1.50681", "0.9468", "ThetaEvolve", "w/", "SOTA", "reuse", "(1.50317)", "R1-Qwen3-8B", "n/a", "1.50314", "n/a", "OpenEvolve", "[61]", "gpt-oss-120b", "0.380965", "1.50719", "0.9449", "Best-of-25600", "gpt-oss-120b", "0.380906", "1.51004", "0.9344", "Method", "Model", "Erdős’", "(↓)", "AC1", "(↓)", "AC2", "(↑)", "best", "human", "–", "0.380927", "1.50973", "0.9015"],
+  "name": "2",
+  "page": 7,
+  "regionBoundary": {
+    "x1": 89.64,
+    "x2": 534.24,
+    "y1": 90.72,
+    "y2": 222.12
+  },
+  "renderDpi": 200,
+  "renderURL": "2601.16175v2_fig/2601.16175v2-Table2-1.png"
+}, {
+  "caption": "Figure 2. We show the normalized step functions including the prior state-of-the-art from AlphaEvolve. The step function f (x) is the limiting density of set A. Unlike the previous state-of-the-art, the solution from TTT-Discover is an asymmetric construction. TTT-Discover found a 600-piece step function, while AlphaEvolve construction was 95-piece. The best human result was a 51-piece construction [20].",
+  "captionBoundary": {
+    "x1": 89.71299743652344,
+    "x2": 523.6355590820312,
+    "y1": 424.66986083984375,
+    "y2": 462.84600830078125
+  },
+  "figType": "Figure",
+  "imageText": ["51-piece", "function", "c", "0.380927", "Human", "best", "(Haugland", "2016)", "95-piece", "function", "c", "0.380924", "Prior", "state-of-the-art", "(AlphaEvolve)", "600-piece", "function", "c", "0.380876", "New", "state-of-the-art", "(TTT-Discover)"],
+  "name": "2",
+  "page": 7,
+  "regionBoundary": {
+    "x1": 90.72,
+    "x2": 521.28,
+    "y1": 358.56,
+    "y2": 411.12
+  },
+  "renderDpi": 200,
+  "renderURL": "2601.16175v2_fig/2601.16175v2-Figure2-1.png"
+}, {
+  "caption": "Figure 4. Reward distributions for each ablation. We match the sampling budget across all ablations. We sample 512 rollouts in each step. For example, for Best-of-N , we have N = 50× 512 = 256000 rollouts.",
+  "captionBoundary": {
+    "x1": 90.0,
+    "x2": 521.9986572265625,
+    "y1": 216.5798797607422,
+    "y2": 232.8380126953125
+  },
+  "figType": "Figure",
+  "imageText": ["Max", "reward", "within", "rollouts", "in", "step", "5", "25", "50", "Step", "Mean", "reward", "within", "rollouts", "in", "step", "5", "25", "50", "Step", "Max", "reward", "up", "to", "step", "Previous", "SOTA", "rd", "Re", "wa", "2.5", "1.5", "0.5", "Step", "Naive", "RL", "Best-of-N", "5", "25", "50", "Greedy", "No", "reuse", "Constant", "β", "No", "entropic", "No", "TTT", "TTT-Discover"],
+  "name": "4",
+  "page": 16,
+  "regionBoundary": {
+    "x1": 94.67999999999999,
+    "x2": 520.1999999999999,
+    "y1": 91.08,
+    "y2": 201.95999999999998
+  },
+  "renderDpi": 200,
+  "renderURL": "2601.16175v2_fig/2601.16175v2-Figure4-1.png"
+}, {
+  "caption": "Table 4. For the TriMul competition, we train a single model using H100 runtime as the reward function and report the runtime of the single best kernel. We only trained using H100 for evaluating kernels during training. The generated kernels happened to generalize to other GPU types. We also report the top-5 human submissions in the leaderboard for comparison (each GPU type has its own top-5 human submissions). For A100 and H100, we submitted to the official leaderboard and report the runtime returned. For B200 and MI300X, we could not submit our kernels due to an infra problem on GPU Mode’s server, and therefore conduct 10 trials for each kernel and report mean and confidence intervals using the same infrastructure as GPUMode, verified by the organizers. Our state-of-the-art kernels are released and can be validated in our codebase.",
+  "captionBoundary": {
+    "x1": 89.6500015258789,
+    "x2": 523.6331787109375,
+    "y1": 348.4678649902344,
+    "y2": 430.47900390625
+  },
+  "figType": "Table",
+  "imageText": ["TTT-Discover", "gpt-oss-120b", "2198.2", "1161.2", "914.2", "[907.3,", "921.1]", "1555.7", "[1550.8,", "1560.6]", "Best-of-25600", "gpt-oss-120b", "9219.7", "5390.3", "3254.9", "[3252.5,", "3257.4]", "4902.0", "[4897.6,", "4906.4]", "5th", "human", "–", "8345.0", "4233.1", "6503.8", "[6400.5,", "6607.1]", "8365.1", "[8347.7,", "8382.5]", "4th", "human", "–", "6097.8", "3654.8", "2248.9", "[2089.4,", "2408.4]", "5981.4", "[5978.4,", "5984.4]", "3rd", "human", "–", "5182.2", "2545.7", "1931.0", "[1910.9,", "1951.1]", "5359.3", "[5343.5,", "5375.1]", "2nd", "human", "–", "4918.5", "2368.0", "2362.4", "[2335.7,", "2389.1]", "5165.0", "[5163.0,", "5167.0]", "1st", "human", "–", "4531.5", "1371.1", "1038.9", "[1016.3,", "1061.6]", "2515.8", "[2510.9,", "2520.7]", "TriMul", "(↓,µs)", "Method", "Model", "A100", "H100", "B200", "[95%", "CI]", "AMD", "MI300X", "[95%", "CI]"],
+  "name": "4",
+  "page": 11,
+  "regionBoundary": {
+    "x1": 93.96,
+    "x2": 518.04,
+    "y1": 203.76,
+    "y2": 336.24
+  },
+  "renderDpi": 200,
+  "renderURL": "2601.16175v2_fig/2601.16175v2-Table4-1.png"
+}, {
+  "caption": "Table 5. AMD MLA Decode runtimes on AMD MI300X across three instances. Values are mean runtime across 10 trials with 95% confidence intervals. Top-5 human submissions are from the GPUMode leaderboard. We trained our kernels using an H200 GPUs even though the task is to minimize runtime on MI300X GPUs, since those were not available at scale in online providers. We only selected kernels using a single MI300X GPU. There is significant variance across AMD MI300X instances available via AMD Developer Cloud. Thus, we performed our kernel selection and evaluation across three different instances. In each instance, our best kernel was different, and in none of the cases our best kernel where better than the top human submission with statistical significance.",
+  "captionBoundary": {
+    "x1": 89.71299743652344,
+    "x2": 523.6358032226562,
+    "y1": 597.5308837890625,
+    "y2": 679.5419921875
+  },
+  "figType": "Table",
+  "imageText": ["TTT-Discover", "gpt-oss-120b", "1669.1", "[1649.2,", "1688.9]", "1706.1", "[1685.9,", "1726.3]", "1671.3", "[1646.0,", "1696.5]", "Best-of-25600", "gpt-oss-120b", "2286.0", "[2264.2,", "2307.8]", "2324.1", "[2306.0,", "2342.1]", "2275.2", "[2267.3,", "2283.1]", "5th", "human", "–", "2038.6", "[2017.8,", "2059.3]", "2037.3", "[2021.0,", "2053.6]", "2041.9", "[1989.0,", "2094.8]", "4th", "human", "–", "1768.7", "[1750.3,", "1787.2]", "1769.9", "[1755.2,", "1784.6]", "1767.0", "[1736.2,", "1797.8]", "3rd", "human", "–", "1723.0", "[1711.5,", "1734.5]", "1765.8", "[1758.1,", "1773.5]", "1718.0", "[1698.3,", "1737.7]", "2nd", "human", "–", "1662.8", "[1648.8,", "1676.8]", "1688.6", "[1677.6,", "1699.5]", "1679.7", "[1653.4,", "1705.9]", "1st", "human", "–", "1653.8", "[1637.3,", "1670.3]", "1688.6", "[1672.8,", "1704.3]", "1668.7", "[1637.0,", "1700.3]", "Instance", "1", "Instance", "2", "Instance", "3", "Method", "Model", "AMD", "MI300X", "-", "MLA", "Decode", "(↓,µs)", "[95%", "CI]"],
+  "name": "5",
+  "page": 11,
+  "regionBoundary": {
+    "x1": 95.75999999999999,
+    "x2": 516.24,
+    "y1": 451.44,
+    "y2": 585.0
+  },
+  "renderDpi": 200,
+  "renderURL": "2601.16175v2_fig/2601.16175v2-Table5-1.png"
+}, {
+  "caption": "Table 8. Ablation results for the TriMul GPUMode competition where we time the kernels with an H100 GPU. We report the best kernel we get in each run. We report the reward distributions across steps in Figure 4.",
+  "captionBoundary": {
+    "x1": 89.552001953125,
+    "x2": 523.6312866210938,
+    "y1": 620.1158447265625,
+    "y2": 636.3740234375
+  },
+  "figType": "Table",
+  "imageText": ["Naive", "Test-time", "RL", "TTT", "with", "expected", "reward", "no", "reuse", "5328.73", "Best-of-N", "no", "TTT", "no", "reuse", "5352.36", "Ablations", "for", "reuse", "TTT", "with", "adaptive", "entropic", "ϵ-greedy", "1328.89", "TTT", "with", "adaptive", "entropic", "no", "reuse", "5274.03", "Ablations", "for", "train", "TTT", "with", "constant", "β", "entropic", "PUCT", "1483.83", "TTT", "with", "expected", "reward", "(no", "entropic)", "PUCT", "1985.67", "No", "TTT", "PUCT", "2060.70", "TTT-Discover", "TTT", "with", "adaptive", "entropic", "PUCT", "1203.10", "train", "reuse", "Best", "runtime", "(↓,µs)", "Best", "Human", "Kernel", "–", "–", "1371.1"],
+  "name": "8",
+  "page": 15,
+  "regionBoundary": {
+    "x1": 89.64,
+    "x2": 529.1999999999999,
+    "y1": 462.96,
+    "y2": 608.04
+  },
+  "renderDpi": 200,
+  "renderURL": "2601.16175v2_fig/2601.16175v2-Table8-1.png"
+}]

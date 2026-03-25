@@ -1,5 +1,15 @@
 [
     {
+        "id": "TTT-Discover",
+        "title": "Learning to Discover at Test Time",
+        "date": "2025-01",
+        "venue": "Arxiv",
+        "tags": ["Test-Time Training", "Reinforcement Learning", "Scientific Discovery"],
+        "langs": ["zh", "en"],
+        "summary": "TTT-Discover performs reinforcement learning at test time with an entropic objective and PUCT-based state reuse, enabling LLMs to continuously improve on individual scientific problems and achieving new state-of-the-art across mathematics, GPU kernel engineering, algorithm design, and biology.",
+        "report_date": "2026-03-25"
+    },
+    {
         "id": "MetaClaw",
         "title": "MetaClaw: Just Talk - An Agent That Meta-Learns and Evolves in the Wild",
         "date": "2026-03",
