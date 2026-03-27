@@ -1,4 +1,14 @@
 [
+    {                                                                                                                     
+        "id":      "MiRA_subgoal_web_agent",                                                                              
+        "title":   "A Subgoal-driven Framework for Improving Long-Horizon LLM Agents",                                    
+        "date":    "2026-03-23",                                                                                          
+        "venue":   "Arxiv",                                                                                               
+        "tags":    ["Web Navigation", "Reinforcement Learning", "LLM Agents"],                                            
+        "langs":   ["zh", "en"],                                                                                          
+        "summary": "MiRA unifies subgoal-based inference-time planning with potential-based RL reward shaping to boost Gemma3-12B from 6.4% to 43.0% success rate on WebArena-Lite, surpassing proprietary models and prior open-source SOTA.",                                                   
+        "report_date": "2026-03-27"                                                                                       
+    },
     {
         "id": "TTT-Discover",
         "title": "Learning to Discover at Test Time",
