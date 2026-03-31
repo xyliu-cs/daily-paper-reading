@@ -1,4 +1,14 @@
 [
+    {
+        "id":      "meta-harness",
+        "title":   "Meta-Harness: End-to-End Optimization of Model Harnesses",
+        "date":    "2026",
+        "venue":   "Arxiv",
+        "tags":    ["Harness Engineering", "LLM Optimization", "Code Search"],
+        "langs":   ["zh", "en"],
+        "summary": "An outer-loop system that uses a coding agent with full filesystem access to prior code, traces, and scores to automatically search over LLM harness code, outperforming hand-designed harnesses on text classification (+7.7pp), math reasoning (+4.7pp), and agentic coding tasks.",
+        "report_date": "2026-03-31"
+    },
     {                                                                                                                     
         "id":      "MiRA_subgoal_web_agent",                                                                              
         "title":   "A Subgoal-driven Framework for Improving Long-Horizon LLM Agents",                                    
