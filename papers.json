@@ -1,5 +1,15 @@
 [
     {
+        "id": "AutoHarness",
+        "title": "AutoHarness: improving LLM agents by automatically synthesizing a code harness",
+        "date": "2026-03-05",
+        "venue": "Arxiv",
+        "tags": ["LLM Agents", "Code Synthesis", "Game Playing"],
+        "langs": ["zh", "en"],
+        "summary": "AutoHarness uses LLM-driven iterative code refinement with Thompson sampling tree search to automatically synthesize code harnesses that eliminate illegal moves in 145 TextArena games, enabling smaller models to outperform larger ones.",
+        "report_date": "2026-04-02"
+    },
+    {
         "id":      "meta-harness",
         "title":   "Meta-Harness: End-to-End Optimization of Model Harnesses",
         "date":    "2026",
