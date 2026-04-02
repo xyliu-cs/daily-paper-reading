@@ -56,6 +56,17 @@ The critical distinction from prior text optimizers lies in the scale of availab
 
 On the test set (Table 2), Meta-Harness achieves 48.6% average accuracy, outperforming ACE by 7.7 points and MCE by 8.6 points, while using only 11.4K context tokens (versus 50.8K for ACE and 28.5K for MCE). The ablation study (Table 3) confirms that full filesystem access with execution traces is the critical component: scores-only reaches 34.6% median accuracy versus 50.0% for the full interface.
 
+**Detailed Setup**:  
+- Optimization Sets:  
+  - LawBench (Law): Predict criminal charges (215 classes) based on case descriptions  
+  - Symptom2Disease (S2D): Predict diseases (22 classes) based on symptom descriptions  
+  - USPTO-50k: Predict precursor reactants from product molecules (180 classes)  
+- Test Sets: Held-out test splits of the same three datasets  
+- Initial Harness: zero-shot, few-shot, ACE, and MCE  
+- Final Harness:  
+![Figure 5: Final Framework for Text Classification](meta-harness_fig/1.png)
+
+
 ### 3.2.2 Retrieval-Augmented Math Reasoning
 
 ![Figure 3: Math reasoning results on 200 IMO-level problems](meta-harness_fig/meta-harness-Table6-1.png)
@@ -64,6 +75,15 @@ On the test set (Table 2), Meta-Harness achieves 48.6% average accuracy, outperf
 - **Revealed Insights**: The Meta-Harness-discovered retrieval strategy improves over the no-retrieval baseline across all five held-out models, with a 4.7-point average gain (38.8% vs. 34.1%). Crucially, the harness was optimized on a single model (GPT-OSS-20B) but transfers to four unseen models, demonstrating cross-model generalization.
 - **Key Data**: The discovered harness uses a lexical router assigning queries to one of four subject-specific retrieval policies (combinatorics, geometry, number theory, default), all built on BM25 without requiring additional dense encoders.
 
+**Detailed Setup**:  
+The model is enhanced by enabling it to retrieve examples from a large corpus, since solutions often share reusable proof patterns. Prior reasoning trajectories therefore contain information that the model can leverage during inference.  
+- Optimization Set: 250-problem search set (OlympiadBench + Omni-MATH hard)  
+- Test Set: 200 evaluation problems from previously unseen IMO-level problems (IMO-AnswerBench, IMO-ProofBench, and ArXivMath)  
+- Initial Harness: zero-shot, few-shot, and ACE  
+- Final Harness:  
+![Figure 6: Final Framework for Mathematical Reasoning](meta-harness_fig/2.png)
+
+
 ### 3.2.3 Agentic Coding on TerminalBench-2
 
 ![Figure 4: TerminalBench-2 leaderboard results](meta-harness_fig/meta-harness-Table7-1.png)
@@ -71,6 +91,13 @@ On the test set (Table 2), Meta-Harness achieves 48.6% average accuracy, outperf
 - **Figure Content**: This table shows pass rates on TerminalBench-2 for various harnesses on two base models (Claude Opus 4.6 and Claude Haiku 4.5). The "Auto" column indicates whether the harness was automatically discovered.
 - **Revealed Insights**: On Opus 4.6, Meta-Harness achieves 76.4% pass rate, ranking #2 among all agents (only behind ForgeCode at 81.8%, whose results could not be reproduced from public code). On Haiku 4.5, Meta-Harness achieves 37.6%, ranking #1 among all agents. It is the only automatically discovered harness on this competitive leaderboard.
 - **Key Data**: The discovered modification is an environment bootstrapping step (~80 lines of code) that gathers a sandbox snapshot before the agent loop begins, eliminating 2–4 wasted exploratory turns on dependency-heavy tasks.
+
+**Detailed Setup**:  
+- Optimization Set: TerminalBench-2 evaluates LLM agents on 89 challenging tasks that require long-horizon execution, full autonomy under complex dependencies, and extensive domain knowledge  
+- Test Set: TerminalBench-2  
+- Initial Harness: Terminus 2, and Terminus-KIRA  
+- Final Harness:  
+![Figure 7: Final Framework for Agent Coding](meta-harness_fig/3.png)
 
 ---
 

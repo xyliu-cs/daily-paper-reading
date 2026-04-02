@@ -54,12 +54,27 @@ Meta-Harness 是一个外循环搜索系统，其核心设计思想是将完整�
 
 在测试集上（Table 2），Meta-Harness 达到 48.6% 平均准确率，比 ACE 高 7.7 个百分点、比 MCE 高 8.6 个百分点，同时仅使用 11.4K 上下文 token（ACE 为 50.8K，MCE 为 28.5K）。消融实验（Table 3）表明完整的文件系统访问（含执行轨迹）是关键因素：仅分数条件下中位准确率为 34.6%，而完整接口达到 50.0%。
 
+**具体设置**：   
+- 优化集：LawBench (Law) 根据案件描述预测刑事指控（215 类）；Symptom2Disease (S2D) 根据症状描述预测疾病（22 类）；USPTO-50k 根据产物分子预测前体反应物（180 - 类）。
+- 测试集：Held-out test splits of the same three datasets
+- 起始Harness：zero-shot, few-shot, ACE, and MCE.
+- 最终Harness：
+![图5：文本分类最终框架](meta-harness_fig/1.png)
+
 ### 3.2.2 检索增强数学推理
 
 ![图3：数学推理主实验结果](meta-harness_fig/meta-harness-Table6-1.png)
 
 - **图表内容**：该表展示了在 200 道 IMO 级别数学问题上，不同检索策略在 5 个模型上的 pass@1 准确率，括号内为相对于无检索 baseline 的绝对提升。
 - **揭示关系**：Meta-Harness 发现的检索策略在全部 5 个未见模型上均优于无检索 baseline，平均提升 4.7 个百分点，且在所有方法中取得最高平均准确率（38.8%）。该发现的关键在于搜索仅在一个模型（GPT-OSS-20B）上进行，但发现的 harness 可以迁移到其他四个未见模型。
+
+**具体设置**：   
+通过赋予模型从大型语料库中检索示例的能力来增强其功能，因为解决方案通常共享可复用的证明模式，因此先前的推理轨迹包含模型在推理时可以利用的信息。
+- 优化集：250-problem search set (OlympiadBench + Omni-MATH hard)
+- 测试集：200 evaluation problems from previously unseen IMO-level problems (IMO-AnswerBench, IMO-ProofBench, and ArXivMath)
+- 起始Harness：zero-shot, few-shot, and ACE.
+- 最终Harness：
+![图6：数学推理最终框架](meta-harness_fig/2.png)
 
 ### 3.2.3 TerminalBench-2 编码智能体
 
@@ -68,6 +83,13 @@ Meta-Harness 是一个外循环搜索系统，其核心设计思想是将完整�
 - **图表内容**：该表展示了 TerminalBench-2 上各 harness 的通过率（Pass Rate），分别列出 Claude Opus 4.6 和 Claude Haiku 4.5 两个底层模型的结果，"Auto"列标记是否为自动搜索发现的 harness。
 - **揭示关系**：在 Opus 4.6 上，Meta-Harness 达到 76.4% 通过率，排名第 2（仅次于 ForgeCode 的 81.8%，但后者无法复现）；在 Haiku 4.5 上达到 37.6%，排名第 1。值得注意的是，Meta-Harness 是唯一通过自动搜索发现的 harness，其余均为人工设计。
 - **关键数据**：Meta-Harness 发现的 TerminalBench-2 harness 的核心改进仅是添加了约 80 行的环境引导代码（environment bootstrapping），在智能体循环开始前收集沙箱环境快照。
+
+**具体设置**：  
+- 优化集：TerminalBench-2 评估 LLM 代理在 89 项具有挑战性的任务上的表现，这些任务需要长时程、在复杂依赖关系下完全自主执行以及大量的领域知识。
+- 测试集：TerminalBench-2
+- 起始Harness：Terminus 2, and Terminus-KIRA
+- 最终Harness：
+![图7：智能体编码最终框架](meta-harness_fig/3.png)
 
 ---
 
