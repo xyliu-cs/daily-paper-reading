@@ -1,5 +1,15 @@
 [
     {
+        "id": "AHE",
+        "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses",
+        "date": "2026-04-30",
+        "venue": "Arxiv",
+        "tags": ["Coding Agent", "Harness Evolution", "Self-Improving Agents"],
+        "langs": ["zh", "en"],
+        "summary": "AHE is an observability-driven closed loop that auto-evolves a coding agent's harness (prompt/tools/middleware/memory) by binding every file-level edit to a falsifiable manifest, lifting Terminal-Bench 2 pass@1 from 69.7% to 77.0% in 10 iterations and transferring zero-shot to SWE-bench and four alternate base-model families.",
+        "report_date": "2026-05-06"
+    },
+    {
         "id": "AutoHarness",
         "title": "AutoHarness: improving LLM agents by automatically synthesizing a code harness",
         "date": "2026-03-05",
