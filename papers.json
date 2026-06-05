@@ -1,5 +1,15 @@
 [
     {
+        "id":      "harness_updating_not_benefit",
+        "title":   "Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents",
+        "date":    "2025-05-28",
+        "venue":   "Arxiv",
+        "tags":    ["LLM Agents", "Self-Evolution", "Harness Engineering"],
+        "langs":   ["zh", "en"],
+        "summary": "Harness-updating is flat across model capability tiers while harness-benefit is non-monotonic — mid-tier models gain most, weak models fail at harness activation and adherence.",
+        "report_date": "2026-06-05"
+    },
+    {
         "id": "AHE",
         "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses",
         "date": "2026-04-30",
