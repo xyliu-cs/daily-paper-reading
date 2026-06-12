@@ -1,5 +1,25 @@
 [
     {
+        "id": "HGM",
+        "title": "Huxley-Gödel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine",
+        "date": "2025-10-29",
+        "venue": "Arxiv",
+        "tags": ["Self-Improving Agents", "Coding Agents", "Tree Search"],
+        "langs": ["zh", "en"],
+        "summary": "HGM guides self-improving coding agent search with clade-level metaproductivity (CMP) estimates instead of benchmark scores, provably approximating the Gödel Machine and achieving human-level coding agent design on SWE-bench Lite.",
+        "report_date": "2026-06-12"
+    },
+    {
+        "id": "self-harness",
+        "title": "Self-Harness: Harnesses That Improve Themselves",
+        "date": "2026-06-08",
+        "venue": "Arxiv",
+        "tags": ["LLM Agents", "Harness Engineering", "Self-Improvement"],
+        "langs": ["zh", "en"],
+        "summary": "A fixed LLM iteratively improves its own agent harness via weakness mining, bounded edit proposals, and regression-gated validation, lifting held-out Terminal-Bench-2.0 pass rates by up to 21.4 points across three model families.",
+        "report_date": "2026-06-12"
+    },
+    {
         "id":      "harness_updating_not_benefit",
         "title":   "Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents",
         "date":    "2025-05-28",
