@@ -1,5 +1,15 @@
 [
     {
+        "id": "HarnessX",
+        "title": "HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry",
+        "date": "2025-07",
+        "venue": "Arxiv",
+        "tags": ["Agent Harness", "Self-Evolving Agents", "Reinforcement Learning"],
+        "langs": ["zh", "en"],
+        "summary": "HarnessX treats the agent harness as a composable first-class object, evolves it via a trace-driven multi-agent engine (AEGIS) grounded in an RL-symbolic operational mirror, and co-evolves it with the model via cross-harness GRPO, achieving +14.5% average gain (up to +44.0%) across five benchmarks.",
+        "report_date": "2026-07-09"
+    },
+    {
         "id": "HGM",
         "title": "Huxley-Gödel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine",
         "date": "2025-10-29",
